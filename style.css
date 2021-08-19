@@ -1,0 +1,28 @@
+body
+{
+  margin: 20px;
+}
+
+audio::-webkit-media-controls
+{
+  overflow: hidden !important
+}
+
+#firstLayer
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#secondLayer
+{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#thirdLayer
+{
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
