@@ -3,11 +3,6 @@ body
   margin: 20px;
 }
 
-audio::-webkit-media-controls
-{
-  overflow: hidden !important
-}
-
 #firstLayer
 {
   margin-top: 5px;
