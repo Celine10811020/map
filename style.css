@@ -7,12 +7,14 @@ body
 {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 40px;
 }
 
 #secondLayer
 {
   margin-top: 10px;
   margin-left: 20px;
+  font-size: 30px;
 }
 
 #thirdLayer
@@ -20,4 +22,5 @@ body
   margin-top: 10px;
   margin-left: 40px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
