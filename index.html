@@ -1,36 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
 
-<html lang="zh-TW">
+  <title>Map</title>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-		<title>Map</title>
-	</head>
+<body>
+  <main id="login" class="login-wrap">
+    <section class="panel">
+      <h1 style="text-align: center;">Map</h1>
+      <br>
+      <form id="form">
+        <div class="password-row">
+          <input id="password" type="password" placeholder="輸入密碼" autocomplete="current-password" required autofocus>
+        </div>
+        <button id="unlock" type="submit">登入</button>
+      </form>
+    </section>
+  </main>
+  <section id="contentArea">
+    <header class="bar"><button id="lock" type="button">登出</button></header>
+    <iframe id="viewer" sandbox="allow-popups allow-popups-to-escape-sandbox" referrerpolicy="no-referrer"></iframe>
+  </section>
+</body>
 
-	<body>
-	</body>
+<script src="main.js"></script>
 
-	<script src="declare.js"></script>
-	<script>
-		password = prompt('輸入密碼：','');
-
-		outputString = "";
-
-		for(var i=0; i<password.length; i++)
-		{
-			char = password.substring(i, i+1)
-			index = refStr.indexOf(char)
-			newIndex = index^2;
-			outputString += refStr.substring(newIndex, newIndex+1);
-		}
-
-		if(outputString != null)
-		{
-			location.href= "https://celine10811020.github.io/" + outputString;
-		}
-	</script>
 </html>
